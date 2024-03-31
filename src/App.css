@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+.chatbox{
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin: 5px 0;
+  background-color: bisque;
+  padding: 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+ .me{
+  flex-direction: row-reverse;
+}
+.me .chatbox{
+  background-color: rgb(200, 236, 237);
+}
+.btm{
+  /* position: fixed; */
+  width: 100%;
+  /* bottom: 0; */
+}
+.btm input{
+  width: 80%;
+  padding: 8px;
+}
+.btm button{
+  width: 16%;
+  padding: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.chat-container{
+  height: 70vh;
+  overflow-y: scroll;
+  border: 1px solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-container{
+  width: 60%;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.authentication{
+  background-color: aqua;
+    width: 33%;
+    margin: 38px auto;
+    height: 26vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
 }
